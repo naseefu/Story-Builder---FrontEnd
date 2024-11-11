@@ -1,0 +1,86 @@
+.register{
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  align-items: stretch;
+  max-height: 100vh;
+  min-height: 100vh;
+  /* overflow: hidden; */
+}
+
+.register .reg-video{
+  min-height: 100%;
+  max-height: 100%;
+}
+.register video{
+  min-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.register .reg-video{
+  margin: 0;
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.register .register-header{
+  display: flex;
+  align-items: center;
+}
+.register .register-header img{
+  height: 20px;
+}
+.register .detail-div{
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.register .reg-details{
+  height: 85vh;
+  overflow: auto;
+}
+
+.register .detail-div .detail{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.7rem;
+}
+.register .detail-div .detail input{
+  border: 1px solid rgb(213, 213, 213);
+  width: 20vw;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 6px;
+}
+.register .detail-div .detail input:focus{
+  outline-color:blue ;
+}
+.register .detail-div .detail label{
+  font-size: 13px;
+}
+/* .register .register-details{
+  max-height: 100vh;
+  overflow: auto;
+} */
+
+.register .reg-details::-webkit-scrollbar{
+  scrollbar-width: none;
+}
+.register .detail-div button{
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  width: 20vw;
+  padding: 10px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.register .detail-div button:hover{
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}

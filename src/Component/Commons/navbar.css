@@ -1,0 +1,70 @@
+.navbar{
+  display: flex;
+  /* top: 0%; */
+  text-align: center;
+  width: 80vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  color: rgb(0, 0, 0);
+  background-color:rgb(253, 253, 253);
+  align-items: center;
+  border-radius: 20px;
+  padding: 5px;
+  animation: op 2s ease forwards;
+  font-family: "sfpro",sans-serif;
+}
+.navbar .nav2{
+  display: flex;
+  gap: 5rem;
+  padding-right: 20px;
+  align-items: center;
+}
+.navbar .nav1 p{
+  cursor: pointer;
+  padding-left: 20px;
+}
+.navbar .nav2 p{
+  cursor: pointer;
+}
+@keyframes op {
+  from{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes op1{
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.navbar .signtn{
+  background-color: rgba(0, 0, 0, 0.885);
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: "sfpros",sans-serif;
+  font-size: 13px;
+}
+.navbar .nav2 .p4 .hover-div{
+  height: 0;
+  font-size: 0;
+  opacity: 0;
+}
+.navbar .nav2 .p4:hover{
+  .hover-div{
+    height: fit-content;
+    font-size: 13px;
+    opacity: 1;
+  }
+}

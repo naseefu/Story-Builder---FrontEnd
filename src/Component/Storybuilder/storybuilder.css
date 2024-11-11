@@ -1,0 +1,264 @@
+.story{
+  font-family: "sfpro",sans-serif;
+  height: 100vh;
+}
+.storydett::-webkit-scrollbar,.story-write::-webkit-scrollbar{
+  scrollbar-width: none;
+}
+.story .story-main{
+  display: flex;
+  /* min-height: 100%; */
+
+  .story1{
+    min-width: 5vw;
+    background-color: #ffffff;;
+    /* min-height: 100%; */
+  }
+}
+.storydett{
+  font-family: "sfpro",sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 20px 40px 80px 40px;
+  color: black;
+  background-color: rgb(239, 239, 239);
+}
+.storydett .storydett1{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+.storydett input{
+  width: 80%;
+  height: 30px;
+  border: none;
+  padding: 0px 10px;
+  border-radius:5px;
+  border: 1px solid rgb(226, 226, 226);
+}
+.storydett textarea{
+  width: 80%;
+  height: 150px;
+  resize: none;
+  border: 1px solid rgb(226, 226, 226);
+  padding: 10px;
+  border-radius: 5px;
+}
+.storydett select{
+  height: 30px;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 5px;
+}
+.storydett input:focus,.storydett select:focus,.storydett textarea:focus{
+  outline-color: blue;
+  border-color: transparent;
+  border: none;
+}
+
+.storydett button{
+  border: none;
+  height: 35px;
+  width: 20vw;
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.storydett button:hover{
+  background-color: rgb(0, 76, 255);
+}
+
+.story .story1{
+
+  display: flex;
+  height: 86vh;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  color: rgb(0, 0, 0);
+  .story11 .plus{
+    background-color: #000000ef;
+    color: rgb(255, 255, 255);
+    padding: 8px 8px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  .story11 .plus:hover{
+    background-color: #7c7c7cef;
+  }
+
+}
+.story .story2 .story-write{
+  max-height: 100%;
+  overflow: auto;
+  width: 100%;
+  border-top-left-radius: 20px;
+  margin: 0;
+  background-color: rgb(239, 239, 239);
+  color: black;
+  .story-input{
+    height: 85vh;
+    width: 95%;
+    border: none;
+    padding: 20px;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+    line-height: 25px;
+      /* This disables the resize handle */
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+    .story-input::-webkit-scrollbar{
+      scrollbar-width: none;
+    }
+}
+
+.story .story-write{
+  .story-btns{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 1%;
+  }
+  .story-btns .save-btn{
+    padding: 10px 10px;
+    width: 10vw;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+  }
+  .story-btns .suggest-btn{
+    width: 15vw;
+    border: none;
+    padding: 10px 10px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+  }
+  .story-btns .save-btn:hover{
+    background-color: rgba(170, 170, 170, 0.445);
+    color: white;
+  }
+    .story-btns .suggest-btn:hover{
+      background-color: rgb(0, 98, 255);
+    }
+}
+.story .story-write .aisuggest{
+  border:none;
+  border-radius: 0px;
+  /* resize: none; */
+}
+.story .story-write .aisuggest:focus{
+  outline: none;
+}
+.story .airesultss::-webkit-scrollbar{
+  scrollbar-width: none;
+}
+.story .airesultss textarea{
+  resize: none;
+  background-color: transparent;
+  line-height: 20px;
+}
+.story .airesultss{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.story .airesultss button{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.story .airesultss textarea::-webkit-scrollbar {
+  scrollbar-width: none;
+}
+
+.story .airesultss button:hover{
+  background-color: black;
+  color: white;
+}
+
+.wc-title{
+  font-size: 3vw;
+  width: 65%;
+  margin: 0;
+  padding: 10px 20px;
+  color: transparent;
+  background: linear-gradient(to right,rgb(0, 4, 255),rgb(110, 116, 241),rgb(244, 186, 92),rgb(243, 182, 26),rgb(255, 60, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.story .xmenu{
+  background-color: grey;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.storynames .dot{
+  height: 3px;
+  width: 3px;
+  background-color: black;
+  border-radius: 10px;
+}
+.storynames span{
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.storynames .noactive-story{
+  color: black;
+}
+
+.storynames .active{
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.116);
+  padding: 0 7px;
+  border-radius: 10px;
+  
+}
+.wc-contents h1{
+  margin: 0;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.wc-contents p{
+  width: 50%;
+  padding: 0 20px;
+  margin: 0;
+  color: grey;
+}
+
+.airesultss .x-mark{
+  background-color: rgba(0,0,255,0.3);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.airesultss .x-mark:hover{
+  background-color: rgba(0, 0, 255, 0.6);
+}
